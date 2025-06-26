@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="p1" style="font-size: 30px; color: blue;"></p>
+    <p id="p2" style="font-size: 30px; color: blue;"></p>
+    <p id="p3" style="font-size: 30px; color: blue;"></p>
+    <p id="p4" style="font-size: 30px; color: blue;"></p>
+
+
+    <script>
+        let a = 5;
+        var b = 6;
+        document.getElementById("p1").innerHTML = "a= " + a;
+        document.getElementById("p2").innerHTML = "b= "  + b;
+        document.getElementById("p3").innerHTML = "The addition of above numbers = " + (a+b);
+
+        
+        //var a = 111;      //error - redeclaration of let type variable not allowed
+        //let a = 111;      //error - do 
+
+        a = 111;
+        var b = 123;
+        document.getElementById("p4").innerHTML = "The addition of  " + a + " and " + b + " = " + (a+b);
+    </script>
+</body>
+</html>
